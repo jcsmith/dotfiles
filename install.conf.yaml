@@ -1,3 +1,4 @@
 - link:
     ~/.vim: vim/
     ~/.vimrc: vim/vimrc
+    ~/.bash_aliases: bash/bash_aliases
