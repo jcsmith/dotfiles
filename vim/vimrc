@@ -1,0 +1,79 @@
+".vimrc
+"2015-07-17
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"Enable Pathegon
+""""""""""""""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"General Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible "don't try to maintain backwards compatibility with vi
+filetype on "enable file type detection
+set history=1000 " remember 1000 lines in the edit history
+set cmdheight=3 "3 lines at bottom of the screen for info
+set lazyredraw "don't redraw the screen while executing macros - improves perormance
+set ignorecase "case insensitive searching
+set smartcase "unless the patteren contains caps
+set wrapscan "start again from top/bottom if search hits end
+set backspace=2 "allow backspace to delete across lines
+filetype plugin indent on "enable filetype detection indentation and plugins
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"Indentation settings
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set autoindent "automatically indent new lines
+set smartindent "attemot to intelligently guess the indent level of any new lines
+set tabstop=4 "use four (4) spaces for tabs
+set shiftwidth=4 "make auto indented lines use 4 spaces as well
+set softtabstop=4 "use four (4) spaces for tabs
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"Themes/Colors
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Visual Queues
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set showmatch "show matching brackets/parens
+set ruler "always show the ruler
+set showcmd "always show the command area
+set incsearch "Display the match for a search pattern during input
+set hlsearch "highlight matches with the last used search pattern
+set number "show line numbers by default
+set shortmess+=I "hide the spalash screen on invocation
+syntax enable "enable syntax highlighting
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"Spelling
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set spellfile="~/.vim/spellfile"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"Syntastic
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_aggregate_errors = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"File type specific Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"email files
+autocmd FileType mail set spell "enable spell checking 
+autocmd FileType mail set nonumber "turn off line numbers 
+
+"txt files
+autocmd FileType mail set spell "enable spell checking 
+autocmd FileType mail set nonumber "turn off line numbers 
+
+"markdown files
+autocmd FileType mail set spell "enable spell checking 
