@@ -1,0 +1,7 @@
+#Self Explanitory.
+alias Today="date '+%Y-%m-%d'"
+alias Yesterday="date '+%Y-%m-%d' --date=yesterday"
+
+#force bc to use the standard math library.
+#This makes bc perform decimial calculations by default.
+alias bc="bc -l"
