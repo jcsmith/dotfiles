@@ -3,3 +3,5 @@
     ~/.vimrc: vim/vimrc
     ~/.bash_aliases: bash/bash_aliases
     ~/.bashrc: bash/bashrc
+    ~/.signature: signatures/signature
+    ~/.signature-no-phone: signatures/signature-no-phone
