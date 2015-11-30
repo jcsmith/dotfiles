@@ -76,4 +76,4 @@ autocmd FileType mail set spell "enable spell checking
 autocmd FileType mail set nonumber "turn off line numbers 
 
 "markdown files
-autocmd FileType mail set spell "enable spell checking 
+autocmd FileType markdown set spell "enable spell checking 
