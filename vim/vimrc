@@ -72,8 +72,12 @@ autocmd FileType mail set spell "enable spell checking
 autocmd FileType mail set nonumber "turn off line numbers 
 
 "txt files
-autocmd FileType mail set spell "enable spell checking 
-autocmd FileType mail set nonumber "turn off line numbers 
+autocmd FileType text set spell "enable spell checking 
+autocmd FileType text set nonumber "turn off line numbers 
 
 "markdown files
 autocmd FileType markdown set spell "enable spell checking 
+
+"my worklog files
+autocmd BufNewFile,BufRead */worklog/* set filetype=worklog
+autocmd FileType worklog set spell "enable spell checking
