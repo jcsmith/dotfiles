@@ -7,5 +7,5 @@
     ~/.signature-no-phone: signatures/signature-no-phone
 
 - shell:
-    - [umask 077; mkdir ~/.vimundo, Creating Directory for Vim persistent undo]
+    - [umask 077; mkdir -p ~/.vimundo, Creating Directory for Vim persistent undo]
 
