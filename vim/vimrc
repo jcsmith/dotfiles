@@ -1,6 +1,5 @@
 ".vimrc
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Enable Pathegon
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -61,6 +60,14 @@ set statusline+=%*
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_aggregate_errors = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"Persistent Undo
+""""""""""""""""""""""""""""""""""""""""""""""""""
+if has ('persistent_undo')
+	set undofile
+	set undodir=$HOME/.vimundo
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "File type specific Settings
