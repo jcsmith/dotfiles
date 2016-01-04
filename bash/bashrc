@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000000
-HISTFILESIZE=200000000
+HISTSIZE=1000000 #read the last 1 million lines from the history file into the history list
+HISTFILESIZE=-1 #make history file unlimited
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -72,7 +72,7 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
+# enable color support of ls, gcc, and grep; also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
