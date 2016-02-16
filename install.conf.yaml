@@ -5,6 +5,7 @@
     ~/.bashrc: bash/bashrc
     ~/.signature: signatures/signature
     ~/.signature-no-phone: signatures/signature-no-phone
+    ~/.tmux.conf: tmux/tmux.conf
 
 - shell:
     - [umask 077; mkdir -p ~/.vimundo, Creating Directory for Vim persistent undo]
