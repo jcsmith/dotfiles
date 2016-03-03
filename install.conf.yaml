@@ -1,11 +1,12 @@
 - link:
-    ~/.vim: vim/
-    ~/.vimrc: vim/vimrc
     ~/.bash_aliases: bash/bash_aliases
     ~/.bashrc: bash/bashrc
-    ~/.signature: signatures/signature
+    ~/.git-hooks: git-hooks
     ~/.signature-no-phone: signatures/signature-no-phone
+    ~/.signature: signatures/signature
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.vim: vim/
+    ~/.vimrc: vim/vimrc
 
 - shell:
     - [umask 077; mkdir -p ~/.vimundo, Creating Directory for Vim persistent undo]
