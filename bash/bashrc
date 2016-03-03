@@ -120,3 +120,6 @@ fi
 PROMPT_COMMAND='history -a; history -n' #write to history whenever the prompt is displayed
 #display timestamps in bash history
 export HISTTIMEFORMAT="%F %T "
+
+#export a GOPATH Since its require for go to work properly
+export GOPATH=~/src
