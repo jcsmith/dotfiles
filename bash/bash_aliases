@@ -7,12 +7,12 @@ alias Yesterday="date '+%Y-%m-%d' --date=yesterday"
 alias bc="bc -l"
 
 #update my debian/ubuntu systems
-alias system-update="sudo apt update; sudo apt dist-upgrade && sudo apt autoremove"
+alias system-update="sudo apt update; sudo apt full-upgrade && sudo apt autoremove"
 
 #perform a git pull of the /etc/puppet directory on the wvnet puppet master.
 function puppet-deploy() {
 	echo "Issuing a pull on the puppet master...";
-	ssh -t puppet.wvnet.edu 'cd /etc/puppet; sudo git pull';
+	ssh -t $PUPPET_MASTER 'cd /etc/puppet; sudo git pull';
 }
 
 #ssh to a host and run the puppet agent.
