@@ -105,6 +105,14 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+#Include ~/.bash_private if it exists.  
+#This file will contain information that should not be 
+#public and will not be tracked in git.
+if [ -f ~/.bash_private ]; then
+	. ~/.bash_private
+fi
+
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).

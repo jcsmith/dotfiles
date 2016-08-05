@@ -1,5 +1,6 @@
 - link:
     ~/.bash_aliases: bash/bash_aliases
+    ~/.bash_private: bash/bash_private
     ~/.bashrc: bash/bashrc
     ~/.git-hooks: git-hooks
     ~/.signature-no-phone: signatures/signature-no-phone
