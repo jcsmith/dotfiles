@@ -87,3 +87,6 @@ autocmd FileType markdown set spell "enable spell checking
 "my worklog files
 autocmd BufNewFile,BufRead */worklog/* set filetype=worklog
 autocmd FileType worklog set spell "enable spell checking
+
+"git commit files
+autocmd FileType gitcommit set spell
