@@ -18,6 +18,8 @@ set smartcase "unless the patteren contains caps
 set wrapscan "start again from top/bottom if search hits end
 set backspace=2 "allow backspace to delete across lines
 filetype plugin indent on "enable filetype detection indentation and plugins
+"Disable Q entering ex mode.
+nnoremap Q <nop>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Indentation settings
