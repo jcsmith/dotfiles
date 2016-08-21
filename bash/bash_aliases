@@ -22,6 +22,7 @@ function puppet-kick() {
 
 
 function mail-term(){
+	cd 
 	tmux new-session -d -s mail-term 'mutt'
 	tmux split-window -d -t mail-term:0 -l 10
 	tmux -2 attach-session -t mail-term
