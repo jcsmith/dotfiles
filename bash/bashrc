@@ -6,6 +6,11 @@ case $- in
       *) return;;
 esac
 
+
+#export an environment variable indicating the operating system
+export OPERATING_SYSTEM=$(uname -s)
+
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -109,3 +114,4 @@ export HISTTIMEFORMAT="%F %T "
 
 #export a GOPATH Since its require for go to work properly
 #export GOPATH=~/src
+

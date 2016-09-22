@@ -29,3 +29,7 @@ function mail-term(){
 
 }
 
+#support colors with ls on OSX
+if [ "$OPERATING_SYSTEM" == "Darwin" ]; then
+	alias ls="ls -G"
+fi
