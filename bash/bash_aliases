@@ -29,7 +29,12 @@ function mail-term(){
 
 }
 
-#support colors with ls on OSX
+#OSX specific aliases
 if [ "$OPERATING_SYSTEM" == "Darwin" ]; then
 	alias ls="ls -G"
+	alias vi="vim"
+	alias date="gdate"
 fi
+
+alias vagrant-ansible-playbook="ansible-playbook --private-key=.vagrant/machines/default/virtualbox/private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory"
+
