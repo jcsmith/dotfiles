@@ -1,9 +1,16 @@
 ".vimrc
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"Enable Pathegon
+"vim-plug
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'pearofducks/ansible-vim'
+Plug 'Glench/Vim-Jinja2-Syntax'
+
+
+call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "General Settings
@@ -66,10 +73,8 @@ set spellfile="~/.vim/spellfile"
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Persistent Undo
 """"""""""""""""""""""""""""""""""""""""""""""""""
-if has ('persistent_undo')
-	set undofile
-	set undodir=$HOME/.vimundo
-endif
+set undodir=~/.vimundo
+set undofile
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "File type specific Settings
