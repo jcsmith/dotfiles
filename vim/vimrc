@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'pearofducks/ansible-vim'
 Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'fatih/vim-go'
 
 
 call plug#end()
@@ -97,3 +98,8 @@ autocmd FileType worklog set spell "enable spell checking
 
 "git commit files
 autocmd FileType gitcommit set spell
+
+"ansible YAML files
+autocmd FileType filetype ansible set tabstop=2 "use two (2) spaces for tabs
+autocmd FileType filetype ansible set shiftwidth=2 "make auto indented lines use two (2) spaces as well
+autocmd FileType filetype ansible set softtabstop=2 "use two (2) spaces for tabs
