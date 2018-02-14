@@ -9,7 +9,7 @@
 ############################################################
 
 if [ -e ~/.vim ]; then
-	echo "~/.vim already exists."
+	echo "$HOME/.vim already exists. Skipping..."
 else 
 	ln -s ~/.dotfiles/vim ~/.vim
 fi
@@ -20,7 +20,7 @@ fi
 ############################################################
 
 if [ -e ~/.tmux.conf ]; then
-	echo "~/.tmux.conf already exists."
+	echo "$HOME/.tmux.conf already exists. Skipping..."
 else 
 	ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 fi
@@ -30,19 +30,19 @@ fi
 ############################################################
 
 if [ -e ~/.bash_profile ]; then
-	echo "~/.bash_profile already exists."
+	echo "$HOME/.bash_profile already exists. Skipping..."
 else 
 	ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
 fi
 
 if [ -e ~/.bashrc ]; then
-	echo "~/.bashrc already exists."
+	echo "$HOME/.bashrc already exists. Skipping..."
 else 
 	ln -s ~/.dotfiles/bash/bashrc ~/.bashrc
 fi
 
 if [ -e ~/.bash_aliases ]; then
-	echo "~/.bash_aliases already exists."
+	echo "$HOME/.bash_aliases already exists. Skipping..."
 else 
 	ln -s ~/.dotfiles/bash/bash_aliases ~/.bash_aliases
 fi
